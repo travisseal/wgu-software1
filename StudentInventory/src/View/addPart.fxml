@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="370.0" prefHeight="515.0000999999975" prefWidth="390.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.AddPartController">
+  <children>
+    <Label layoutX="64.0" layoutY="62.0" text="Add Part">
+      <font>
+        <Font name="System Bold" size="13.0" />
+      </font>
+    </Label>
+    <RadioButton layoutX="143.0" layoutY="63.0" mnemonicParsing="false" onAction="#addPartToggleGroupAction" text="In-House">
+      <toggleGroup>
+        <ToggleGroup fx:id="addPartToggleGroup" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton layoutX="251.0" layoutY="63.0" mnemonicParsing="false" onAction="#addPartToggleGroupAction" prefHeight="18.000099999997474" text="Outsourced" toggleGroup="$addPartToggleGroup" />
+    <Label layoutX="91.0" layoutY="110.0" text="ID" />
+    <Label layoutX="76.0" layoutY="174.0" text="Name" />
+    <TextField id="invTextFieldID" fx:id="nameTextFieldID" editable="false" layoutX="119.0" layoutY="168.0" prefHeight="28.0001220703125" prefWidth="200.0" />
+    <TextField fx:id="invTextFieldID" editable="false" layoutX="119.0" layoutY="224.0" prefHeight="29.0" prefWidth="200.0" />
+    <TextField fx:id="priceCostTextFieldID" editable="false" layoutX="119.0" layoutY="265.0" prefHeight="28.0" prefWidth="200.0" />
+    <TextField fx:id="maxAmountTextFieldID" editable="false" layoutX="119.0" layoutY="304.0" prefHeight="28.0" prefWidth="55.0" />
+    <TextField fx:id="minAmountTextFieldID" editable="false" layoutX="264.0" layoutY="310.0" prefHeight="28.0" prefWidth="55.0" />
+    <TextField id="companyNameTextFieldID" fx:id="addPartCompanyNameTextBoxID" editable="false" layoutX="119.0" layoutY="346.0" prefHeight="28.0" prefWidth="100.0" />
+    <Label layoutX="80.0" layoutY="224.0" text="Inv" />
+    <Label layoutX="54.0" layoutY="277.0" text="Price/Cost" />
+    <Label layoutX="74.0" layoutY="310.0" text="Max" />
+    <Label layoutX="219.0" layoutY="313.0" text="Min" />
+    <Label fx:id="addPartCompanyNameLabel" layoutX="21.0" layoutY="349.0" text="" />
+    <Button fx:id="addPartCancelBtn" layoutX="276.0" layoutY="398.0" mnemonicParsing="false" onAction="#cancelBtn" prefHeight="28.0" text="Cancel" />
+    <Button fx:id="addPartSaveBtn" layoutX="149.0" layoutY="398.0" mnemonicParsing="false" onAction="#addPartBtn" prefHeight="28.0" prefWidth="54.0" text="Save" />
+    <TextField id="idTextFieldID" fx:id="partIdTextBox" layoutX="119.0" layoutY="110.0" prefHeight="29.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

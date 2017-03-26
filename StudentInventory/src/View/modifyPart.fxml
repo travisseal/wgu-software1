@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="365.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.ModifyPartController">
+  <children>
+    <Button layoutX="200.0" layoutY="382.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
+    <Button fx:id="modPartCancelBtn" layoutX="279.0" layoutY="382.0" mnemonicParsing="false" onAction="#cancelBtn" text="Cancel" />
+    <Label layoutX="23.0" layoutY="40.0" text="Modify Part">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Label>
+    <RadioButton id="" fx:id="inHouseRadioButtonID" layoutX="140.0" layoutY="42.0" mnemonicParsing="false" onAction="#myGroupAction" selected="false" text="In-House">
+      <toggleGroup>
+        <ToggleGroup fx:id="myGroup" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="outSourcedRadioButtonID" layoutX="238.0" layoutY="43.0" mnemonicParsing="false" onAction="#myGroupAction" text="Outsourced" toggleGroup="$myGroup" />
+    <Label layoutX="26.0" layoutY="113.0" text="ID" />
+    <Label layoutX="26.0" layoutY="167.0" text="Name" />
+    <Label layoutX="24.0" layoutY="214.0" text="Inv" />
+    <Label layoutX="23.0" layoutY="255.0" text="Price/Cost" />
+    <Label layoutX="23.0" layoutY="292.0" text="Max" />
+    <Label layoutX="16.0" layoutY="332.0" text="Company Name" />
+    <TextField id="modifyPartID" fx:id="modifyPartTextFieldID" editable="false" layoutX="115.0" layoutY="107.0" prefWidth="200.0" text="" />
+    <TextField fx:id="nameTextFieldID" editable="false" layoutX="115.0" layoutY="164.0" prefWidth="200.0" />
+    <TextField fx:id="invTextFieldID" editable="false" layoutX="115.0" layoutY="208.0" prefWidth="200.0" />
+    <TextField fx:id="priceCostTextFieldID" editable="false" layoutX="115.0" layoutY="249.0" prefWidth="200.0" />
+    <TextField fx:id="maxAmountTextFieldID" editable="false" layoutX="115.0" layoutY="289.0" prefWidth="85.0" />
+    <TextField fx:id="companyNameTextBoxID" editable="false" layoutX="115.0" layoutY="326.0" onAction="#saveBtn" prefWidth="96.0" />
+    <TextField fx:id="minAmountTextFieldID" editable="false" layoutX="254.0" layoutY="289.0" prefWidth="77.0" />
+    <Label layoutX="215.0" layoutY="292.0" text="Min" />
+  </children>
+</AnchorPane>
